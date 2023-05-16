@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "yarn",
-    "start":"node src/app.js"
+    "build": "yarn"
+    
   },
   "keywords": [],
   "author": "",
