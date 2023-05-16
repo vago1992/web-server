@@ -14,7 +14,7 @@ const forecast=(address,callback)=>{
             callback("Unable to find location. Try another search",undefined)
 
         }else{
-            callback(undefined, 'Is it currently in '+ body.location.name + " the humidity is  "+ body.current.humidity + " and the temperatur feels like " + body.current.feelslike_c )
+            callback(undefined, 'Is it currently in '+ body.location.name + " the humidity is  "+ body.current.humidity + " and the temperature feels like " + body.current.feelslike_c+ ". The high for today is: "+body.current.temp_f+". The low for today: "+body.current.temp_c)
         }
 
     })
