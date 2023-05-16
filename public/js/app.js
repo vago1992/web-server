@@ -4,14 +4,14 @@ const messageOne=document.querySelector('#message-1')
 const messageTwo=document.querySelector('#message-2')
 
 messageOne.textContent='Loading...'
-messageTwo.textContent=' '
+messageTwo.textContent=''
 
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
 
     const location=search.value
 
-    fetch('http://localhost:3000/weather?address='+encodeURIComponent(location)+'').then((response)=>{
+    fetch('/weather?address='+encodeURIComponent(location)+'').then((response)=>{
     response.json().then((data)=>{
         console.log(data)
         if (data.error){
